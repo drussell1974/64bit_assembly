@@ -1,4 +1,13 @@
-section .code
-SomeFunction:
+global _start
+
+section .text			; instructions
+_start:
 	mov ax, -1
-	syscall
+	ret
+
+; DEBUG
+; nasm -felf64 asm.asm -o asm.o -g
+; ld -o bin\asm asm.o
+; gdb bin\asm
+; run
+; info registers $rax
