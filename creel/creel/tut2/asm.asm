@@ -9,5 +9,5 @@ _start:
 ; nasm -felf64 asm.asm -o asm.o -g
 ; ld -o bin\asm asm.o
 ; gdb bin\asm
-; run
-; info registers $rax
+; (gdb) run
+; (gdb) info registers $rax

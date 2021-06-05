@@ -4,8 +4,8 @@ section .data ; variables
 
 section .text ; instructions
 _start:
-    mov rax, 89         ; OK immediate into the accumulator - 
-    mov cx, ax          ; OK register to register
+    mov rax, 89           ; OK immediate into the accumulator - 
+    mov cx, ax            ; OK register to register
     mov r11, [myByte]     ; OK memory to register
     ; THESE ARE ILLEGAL
     ; mov cx, eax         ; it should be the same size
@@ -15,16 +15,16 @@ _start:
 
 ; MOV src, dest
 ; DEBUG
-; break _start
-; run
-; ni
-; info register rax
+; (gdb) break _start
+; (gdb) run
+; (gdb) ni
+; (gdb) info register rax
 ; rax            0x59                89
-; ni
-; info register cx
+; (gdb) ni
+; (gdb) info register cx
 ; cx             0x59                89
-; ni
-; info register r11
+; (gdb) ni
+; (gdb) info register r11
 ; r11            0x100000059         4294967385
 
  

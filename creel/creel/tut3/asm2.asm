@@ -9,10 +9,9 @@ _start:
     ret
 
 ; DEBUG
-; break _start
-; run
-; info register r11
-; ni
-; info register r12
-
+; (gdb) break _start
+; (gdb) run
+; (gdb) info register r11
+; (gdb) ni
+; (gdb) info register r12
 ; POINTER

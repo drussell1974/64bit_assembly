@@ -14,9 +14,9 @@ _start:
 ; nasm -felf64 asm.asm -o asm.o -g
 ; ld -o bin\asm asm.o
 ; gdb bin\asm
-; break _start
-; run
-; ni -- to skip the line that is the function call
-; info registers $r11
-; ni
+; (gdb) break _start
+; (gdb) run
+; (gdb) ni -- to skip the line that is the function call
+; (gdb) info registers $r11
+; (gdb) ni
 ; ^ repeat last two lines
