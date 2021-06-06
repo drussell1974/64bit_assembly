@@ -12,9 +12,9 @@ SomeFunction:
 	
 
 ; DEBUG
-; nasm -felf64 asm.asm -o asm.o -g
-; ld -o asm asm.o
-; gdb asm
+; nasm -felf64 function.asm -o function.o -g
+; ld -o bin/function function.o
+; gdb bin/function
 ; disass _start
 ; disass SomeFunction
 ; run

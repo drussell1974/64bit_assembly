@@ -6,8 +6,8 @@ _start:
 	ret
 
 ; DEBUG
-; nasm -felf64 asm.asm -o asm.o -g
-; ld -o bin\asm asm.o
-; gdb bin\asm
+; nasm -felf64 16bit.asm -o 16bit.o -g
+; ld -o bin\16bit 16bit.o
+; gdb bin\16bit
 ; (gdb) run
 ; (gdb) info registers $rax

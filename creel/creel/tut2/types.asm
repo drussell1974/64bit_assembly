@@ -11,9 +11,9 @@ _start:
 	ret
 
 ; DEBUG
-; nasm -felf64 asm.asm -o asm.o -g
-; ld -o bin\asm asm.o
-; gdb bin\asm
+; nasm -felf64 types.asm -o types.o -g
+; ld -o bin\types types.o
+; gdb bin\types
 ; (gdb) break _start
 ; (gdb) run
 ; (gdb) ni -- to skip the line that is the function call
