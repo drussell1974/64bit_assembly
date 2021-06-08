@@ -13,3 +13,4 @@ _start:
 ; (gdb) run
 ; (gdb) ni
 ; (gdb) info register rax
+; (gdb) p /t 0x5

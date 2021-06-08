@@ -1,29 +1,29 @@
-; ROTATE LEFT
+; ROTATE LEFT WITH CARRY FLAG
 global _start
 section .text
 _start:
     mov dx, 16 
-    rol dx, 1   ; 32
-    rol dx, 1   ; 64
-    rol dx, 1   ; 128
-    rol dx, 1   ; 256  
-    rol dx, 1   ; 512
-    rol dx, 1   ; 1024
-    rol dx, 1   ; 2048
-    rol dx, 1   ; 4096
-    rol dx, 1   ; 8192
-    rol dx, 1   ; 16384
-    rol dx, 1   ; -32768
-    rol dx, 1   ; 1
-    rol dx, 1   ; 2
-    rol dx, 1   ; 4
-    rol dx, 1   ; 8
-    rol dx, 1   ; 16
+    rcl dx, 1   ; 32
+    rcl dx, 1   ; 64
+    rcl dx, 1   ; 128
+    rcl dx, 1   ; 256  
+    rcl dx, 1   ; 512
+    rcl dx, 1   ; 1024
+    rcl dx, 1   ; 2048
+    rcl dx, 1   ; 4096
+    rcl dx, 1   ; 8192
+    rcl dx, 1   ; 16384
+    rcl dx, 1   ; -32768
+    rcl dx, 1   ; 1
+    rcl dx, 1   ; 2
+    rcl dx, 1   ; 4
+    rcl dx, 1   ; 8
+    rcl dx, 1   ; 16
 
 ; DEBUG
-; nasm -felf64 rol.asm -o rol.o
-; ld rol.o -o bin/rol
-; gdb bin/rol
+; nasm -felf64 rcl.asm -o rcl.o
+; ld rcl.o -o bin/rcl
+; gdb bin/rcl
 ; (gdb) break _start
 ; (gdb) run
 ; (gdb) ni
